@@ -1,0 +1,28 @@
+{
+  "name": "node_homework",
+  "version": "1.0.0",
+  "description": "node js homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1.1": "nodemon basic-node-fundamentals/task1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avedis92/node_homework.git"
+  },
+  "keywords": [
+    "nodejs",
+    "npm",
+    "javascript"
+  ],
+  "author": "Avedis Demirdjian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avedis92/node_homework/issues"
+  },
+  "homepage": "https://github.com/Avedis92/node_homework#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
