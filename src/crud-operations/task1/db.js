@@ -1,4 +1,5 @@
 const uuid = require('uuid');
+const sortUsersArray = require('../../helpers/sortUserBySuggestion');
 
 const userDb = [];
 
@@ -12,8 +13,8 @@ class UserCRUDOperation {
     }
     getAutoSuggestions(loginSubstring, limit) {
         const suggestions = userDb.filter(user => user.login.toLowerCase().includes(loginSubstring.toLowerCase()));
-        suggestions.sort();
-        return suggestions.slice(0, limit);
+        const sortedSuggestions = sortUsersArray(suggestions);
+        return sortedSuggestions.slice(0, limit);
     }
     postUser(userObject) {
         const id = uuid.v1();
