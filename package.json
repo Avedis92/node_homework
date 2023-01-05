@@ -9,6 +9,7 @@
     "task1.2": "nodemon src/basic-node-fundamentals/task2.js",
     "task1.3": "babel-node src/basic-node-fundamentals/task3.js",
     "task2": "nodemon src/crud-operations/task1/task1.js",
+    "task3": "nodemon src/db-integration/app.js",
     "lint": "eslint src --fix --ext .js"
   },
   "repository": {
@@ -42,6 +43,9 @@
     "csvtojson": "^2.0.10",
     "express": "^4.18.2",
     "joi": "^17.7.0",
+    "pg": "^8.8.0",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2",
     "uuid": "^9.0.0"
   }
 }
